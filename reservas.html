@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>las Reservas</title>
+</head>
+<body style="background-color: lightblue;">
+ <h1>Haga su reserva</h1>
+    <form action="procesareserva.php"    
+    method="get">
+        <fieldset><legend>Datos Personales</legend>
+            <p>
+                <label for="Nombre">Nombre:</label>
+                <input id="Nombre" type="text" maxlength="100"
+                 name="nombre" required
+                 autofocus>
+            </p>
+            <p>
+                <label for="ape">Apellidos:</label>
+                <input type="text" required
+                name="apellidos" id="ape"
+                maxlength="100">
+            </p>
+            <p>
+                <label for="dni">DNI:</label>
+                <input type="text" required
+                name="dni" id="dni"
+                maxlength="10" placeholder="DNI con letra">
+            </p>
+        </fieldset>
+        <p>
+        <fieldset> <legend>Datos de su estancia</legend>
+            <p>
+                <label for="ver">Vertical</label>
+                <input type="radio" value="V"
+                id="ver" name="Habitación">
+                <label for="hor">Horizontal</label>
+                <input type="radio" value="H"
+                id="hor" name="Habitación">
+                <label for="hdob">Horizontal Doble</label>
+                <input type="radio" value="HD"
+                id="hdob" name="Habitación">
+            </p>
+            <p>
+                <label for="numper">Número de personas</label>
+                <select name="numper" id="numper">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </p>
+            <p>
+                <label for="mascotas">Llevo mascotas</label>
+                <input type="checkbox" name="mascotas"
+                id="mascotas">
+            </p>
+            <p>
+                <label for="entrada">Fecha de llegada</label>
+                <input type="date" name="entrada"
+                id="entrada">
+            </p>
+            <p>
+                <label for="hsentrada">Hora de entrada</label>
+                <input type="time" name="hsentrada"
+                id="hsentrada">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reiniciar">
+            </p>
+        </fieldset>
+            <p>
+                <a href="index.html">Volver</a>
+            </p>
+</form>
+</body>
+</html>
